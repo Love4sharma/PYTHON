@@ -1,3 +1,4 @@
+import os
 f=open('demo.txt',"rb")
 data=f.read()   # read the entire file
 
@@ -54,4 +55,19 @@ c.write("abc")
 print(c.read())
 c.close()
 
+#  with syntax 
+
+with open("demo.txt","r") as f:
+      data=f.read()
+      print(data)
+
+
+with open("demo.txt","w") as f:
+      data=f.write("hello baby")
+      print(data)
+      
+# deleting python
+# for deleting a file we need a module named as os module
+
+os.remove("demo.txt")
 
